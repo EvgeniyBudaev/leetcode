@@ -2,9 +2,6 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-const compareNumbers = (a, b) => {
-    return a - b;
-};
 
 var sortedSquares = function(nums) {
     const result = new Array(nums.length);
