@@ -15,14 +15,16 @@ var longestOnes = function(nums, k) {
 
     for (let right = 0; right < nums.length; right++) {
         if (nums[right] === 0) {
-            while (zeros >= k) {
-                if (nums[left] === 0) {
-                    zeros -= 1;
-                }
-                left++;
-            }
-            zeros += 1;
+            zeros++;
         }
+
+        while (zeros > k) {
+            if (nums[left] === 0) {
+                 zeros--;
+            }
+            left++;
+        }
+
         result = Math.max(result, right- left + 1);
     }
 
