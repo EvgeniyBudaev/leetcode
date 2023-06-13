@@ -3,6 +3,11 @@
  * @param {number} k
  * @return {number}
  */
+
+/**
+ * Учитывая массив целых чисел nums и целое число k, вернуть количество смежных подмассивов,
+ * где произведение всех элементов в подмассиве строго меньше, чем k .
+ **/
 var numSubarrayProductLessThanK = function(nums, k) {
     if (k <= 1) {
         return 0;

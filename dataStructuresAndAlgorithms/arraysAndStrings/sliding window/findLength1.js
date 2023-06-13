@@ -3,6 +3,11 @@
  * @param {number} k
  * @return {number}
  */
+
+/**
+ * Дан массив положительных целых чисел nums и целое число k.
+ * Найдите длину самого длинного подмассива, сумма которого меньше или равна k.
+ **/
 var findLength = function(nums, k) {
     let left = 0, curr = 0, ans = 0;
     for (let right = 0; right < nums.length; right++) {
