@@ -2,6 +2,11 @@
  * @param {number[]} nums
  * @return {number[]}
  */
+
+/**
+ * Дан массив nums. Мы определяем текущую сумму массива как runningSum[i] = sum(nums[0]…nums[i]).
+ * Возвращает текущую сумму чисел.
+ **/
 var runningSum = function(nums) {
     for (let i = 0; i < nums.length; i++) {
         if (i === 0) {
