@@ -5,6 +5,11 @@
  * @param {number} n
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
+
+/** Вам даны два массива целых чисел nums1 и nums2, отсортированные в неубывающем порядке ,
+ *  и два целых числа m и n, представляющие количество элементов в nums1 и nums2 соответственно.
+
+Объединить nums1 и nums2 в один массив, отсортированный в неубывающем порядке **/
 const merge = function (nums1, m, nums2, n) {
   let p1 = m - 1;
   let p2 = n - 1;
