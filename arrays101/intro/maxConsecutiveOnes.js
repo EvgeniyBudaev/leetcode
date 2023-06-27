@@ -2,6 +2,8 @@
  * @param {number[]} nums
  * @return {number}
  */
+
+/** Учитывая двоичный массив nums, вернуть максимальное количество последовательных 1's в массиве **/
 const findMaxConsecutiveOnes = function(nums) {
     let max = 0;
     let currentCountOfOnes = 0;
