@@ -2,6 +2,8 @@
  * @param {number[]} arr
  * @return {boolean}
  */
+
+/** Дан массив целых чисел arr, возврат true тогда и только тогда, когда это допустимый массив гор **/
 var validMountainArray = function(arr) {
     if (arr.length < 3) return false;
     if (arr[1] < arr[0]) return false;
