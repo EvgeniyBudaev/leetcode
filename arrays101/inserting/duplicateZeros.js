@@ -2,6 +2,9 @@
  * @param {number[]} arr
  * @return {void} Do not return anything, modify arr in-place instead.
  */
+
+/** Учитывая целочисленный массив фиксированной длины arr,
+ *  продублируйте каждое вхождение нуля, сдвигая оставшиеся элементы вправо **/
 const duplicateZeros = function (arr) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 0) {
