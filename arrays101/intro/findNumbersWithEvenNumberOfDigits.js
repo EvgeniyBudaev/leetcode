@@ -2,6 +2,8 @@
  * @param {number[]} nums
  * @return {number}
  */
+
+/** Учитывая массив nums целых чисел, вернуть, сколько из них содержат четное количество цифр **/
 const findNumbers = function(nums) {
     let counter = 0;
 
