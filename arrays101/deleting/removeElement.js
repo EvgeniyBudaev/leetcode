@@ -3,6 +3,10 @@
  * @param {number} val
  * @return {number}
  */
+
+/** Учитывая целочисленный массив nums и целое число val, удалите все вхождения val in nums in-place.
+ *  Порядок элементов может быть изменен. Затем вернуть количество элементов, в nums которых не равны val.
+**/
 const removeElement = function (nums, val) {
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] === val) {
