@@ -2,6 +2,13 @@
  * @param {number[]} arr
  * @return {boolean}
  */
+
+/** Учитывая массив arr целых чисел, проверьте, существуют ли два индекса i и j такие, что:
+
+i != j
+0 <= i, j < arr.length
+arr[i] == 2 * arr[j]
+ **/
 var checkIfExist = function (arr) {
   let newSet = new Set();
 
