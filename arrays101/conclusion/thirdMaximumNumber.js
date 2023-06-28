@@ -2,6 +2,9 @@
  * @param {number[]} nums
  * @return {number}
  */
+
+/** Учитывая целочисленный массив nums, вернуть третье максимальное число в этом массиве.
+ *  Если третьего максимума не существует, вернуть максимальное число **/
 var thirdMax = function(nums) {
     const uniqueNums = [...new Set(nums)];
     uniqueNums.sort((a, b) => b - a);
