@@ -2,6 +2,9 @@
  * @param {number[]} nums
  * @return {number[]}
  */
+
+/** Учитывая массив целых чисел nums, переместите все четные целые числа в начало массива,
+ *  а затем все нечетные целые числа **/
 var sortArrayByParity = function(nums) {
     let arrayLength = nums.length;
 
