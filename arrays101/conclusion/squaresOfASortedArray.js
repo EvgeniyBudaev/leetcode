@@ -3,6 +3,8 @@
  * @return {number[]}
  */
 
+/** Дан целочисленный массив nums, отсортированный в неубывающем порядке,
+ *  вернуть массив квадратов каждого числа, отсортированного в неубывающем порядке **/
 var sortedSquares = function(nums) {
     const result = new Array(nums.length);
     let left = 0;
