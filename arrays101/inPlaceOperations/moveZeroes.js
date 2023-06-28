@@ -2,6 +2,9 @@
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
+
+/** Учитывая массив целых чисел nums, переместите все 0 элементы в его конец,
+ *  сохраняя относительный порядок ненулевых элементов **/
 var moveZeroes = function(nums) {
     let numsLength = nums.length;
 
