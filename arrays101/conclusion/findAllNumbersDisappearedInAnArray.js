@@ -2,6 +2,9 @@
  * @param {number[]} nums
  * @return {number[]}
  */
+
+/** Дан массив nums целых n чисел где nums[i] находится в диапазоне [1, n],
+ *  вернуть массив всех целых чисел в диапазоне [1, n] , которые не появляются в nums **/
 var findDisappearedNumbers = function(nums) {
     const arrayLength = nums.length;
 
