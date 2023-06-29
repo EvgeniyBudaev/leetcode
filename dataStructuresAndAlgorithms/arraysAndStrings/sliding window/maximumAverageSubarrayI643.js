@@ -10,20 +10,20 @@
  * Найдите непрерывный подмассив, длина которого равна k максимальному среднему значению, и верните это значение.
  **/
 var findMaxAverage = function (nums, k) {
-    let sum = 0;
-
-    for (let i = 0; i < k; i++) {
-        sum += nums[i];
+    let windowStart = 0, windowSum = 0, result = -Infinity
+    
+    for (let windowEnd = 0; windowEnd < nums.length; windowEnd++) {
+        windowSum += nums[windowEnd]
+        
+        if (windowEnd >= k - 1) {
+            const windowSize = (windowEnd - windowStart) + 1
+            result = Math.max(result, windowSum / windowSize)
+            windowSum -= nums[windowStart]
+            windowStart++
+        }
     }
-
-    let res = sum;
-
-    for (let i = k; i < nums.length; i++) {
-        sum += nums[i] - nums[i - k];
-        res = Math.max(res,sum);
-    }
-
-    return res / k;
+    
+    return result
 }
 
 console.log(findMaxAverage([1, 12, -5, -6, 50, 3], 4)); // 12.75
